@@ -12,7 +12,7 @@
   </property>
   <property name="font">
    <font>
-    <family>Mongolian Baiti</family>
+    <family>Microsoft Sans Serif</family>
     <weight>75</weight>
     <bold>true</bold>
     <kerning>false</kerning>
@@ -40,6 +40,13 @@
       <height>19</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="text">
      <string>Please select XML files.</string>
     </property>
@@ -52,6 +59,14 @@
       <width>101</width>
       <height>23</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>7</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="text">
      <string>Empty Tags</string>
@@ -66,6 +81,14 @@
       <height>23</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>7</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="text">
      <string>P Class  Tags</string>
     </property>
@@ -78,6 +101,14 @@
       <width>101</width>
       <height>23</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>7</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="text">
      <string>Whitespaces</string>
@@ -92,6 +123,14 @@
       <height>23</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>7</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="text">
      <string>Section Content</string>
     </property>
@@ -104,6 +143,17 @@
       <width>121</width>
       <height>27</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 225, 234);
+color: rgb(0, 0, 0)</string>
     </property>
     <property name="text">
      <string>Select File(s)</string>
@@ -118,6 +168,17 @@
       <height>27</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 225, 234);
+color: rgb(0, 0, 0)</string>
+    </property>
     <property name="text">
      <string>Run Cleanup</string>
     </property>
@@ -131,8 +192,18 @@
       <height>211</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
    </widget>
    <widget class="QPushButton" name="pbSingle">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>517</x>
@@ -140,6 +211,13 @@
       <width>101</width>
       <height>27</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="text">
      <string>Single File</string>
@@ -154,6 +232,14 @@
       <height>23</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>7</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="text">
      <string>Table</string>
     </property>
@@ -166,6 +252,17 @@
       <width>101</width>
       <height>23</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 225, 234);
+color: rgb(0, 0, 0)</string>
     </property>
     <property name="text">
      <string>Remove File</string>
@@ -209,7 +306,7 @@
      <x>0</x>
      <y>0</y>
      <width>628</width>
-     <height>22</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
