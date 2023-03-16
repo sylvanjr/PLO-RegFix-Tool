@@ -1,3 +1,4 @@
+from queue import Empty
 import sys
 from PyQt5.QtWidgets import QMessageBox, QApplication, QMainWindow, QLabel, QCheckBox, QPushButton, QFileDialog, QListWidget, QTextEdit
 from PyQt5 import uic
@@ -59,11 +60,12 @@ class mainWindow(QMainWindow):
 
                 # Empty Tags
                 # Find all tags that have no text, and delete
+                whiteList = ['attach', 'digest', 'text', 'supplemental_info', 'fiscal_note', 'analysis', 'public_hearing', 'head']
                 if self.cbET.isChecked():
                     for empTags in soup.find_all():
-                        if (len(empTags.get_text(strip=True)) == 0):  # and (empTags.name not in whiteList):
+                        if (len(empTags.get_text(strip=True)) == 0) and (empTags.name not in whiteList):
                             empTags.extract()
-
+                            
                 # P Class
                 # Changing all p class value to "indent", except for "center"
                 if self.cbPC.isChecked():
@@ -126,8 +128,8 @@ class mainWindow(QMainWindow):
                             empTags.extract()
 
             x = soup
-            print("this is final x")
-            print(x)
+            #print("this is final x")
+            #print(x)
 
             outDir = os.path.dirname(__file__)
             now = datetime.datetime.now()
@@ -144,8 +146,8 @@ class mainWindow(QMainWindow):
             print(xmlFile)
             file = os.path.join(newPath, xmlFile)
             print(file)
-            #with open(file, "w+", encoding="utf-8") as f:
-            with open(file, "w+") as f:
+            with open(file, "w+", encoding="utf-8") as f:
+            #with open(file, "w+") as f:
                 f.write(str(x))
 
         msg = QMessageBox()
